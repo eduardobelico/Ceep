@@ -11,3 +11,5 @@ data class Nota(
     val descricao: String,
     val imagem: String? = null
 )
+
+//java -jar server.jar
