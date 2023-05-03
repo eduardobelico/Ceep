@@ -26,14 +26,14 @@ class FormNotaActivity : AppCompatActivity() {
     }
     private var imagem: MutableStateFlow<String?> = MutableStateFlow(null)
 
-        private val repository by lazy {
-            NotaRepository(
-                AppDatabase.instancia(this).notaDao(),
-                NotaWebClient()
-            )
-        }
+    private val repository by lazy {
+        NotaRepository(
+            AppDatabase.instancia(this).notaDao(),
+            NotaWebClient()
+        )
+    }
 
-    private var notaId: String?= null
+    private var notaId: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
