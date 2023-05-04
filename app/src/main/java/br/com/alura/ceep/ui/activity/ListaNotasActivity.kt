@@ -53,9 +53,6 @@ class ListaNotasActivity : AppCompatActivity() {
         binding.swipeRefreshLayout.setOnRefreshListener {
             lifecycleScope.launch {
                 sincroniza()
-                repeatOnLifecycle(Lifecycle.State.STARTED) {
-                    buscaNotas()
-                }
             }
             binding.swipeRefreshLayout.isRefreshing = false
         }
