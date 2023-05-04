@@ -13,7 +13,9 @@ data class Nota(
     val descricao: String,
     val imagem: String? = null,
     @ColumnInfo(defaultValue = "0")
-    val notaSincronizada: Boolean = false
+    val notaSincronizada: Boolean = false,
+    @ColumnInfo(defaultValue = "0")
+    val desativada: Boolean = false
 )
 
 //java -jar server.jar
